@@ -1,0 +1,10 @@
+{
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"files.autoSave": "onFocusChange",
+	"[env]": {
+		"editor.insertSpaces": true,
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": ".env"
+	}
+}

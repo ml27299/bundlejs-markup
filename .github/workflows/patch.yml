@@ -1,0 +1,43 @@
+name: Deploying @bundlejs/mobx npm package
+on:
+  push:
+    branches:
+      - patch
+concurrency: patch
+jobs:
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+          registry-url: "https://registry.npmjs.org"
+
+      - run: npm i -g np@7.6.1
+      - run: npm ci
+      - run: npm run build:prod
+
+      - name: Publish to npm
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          npm run release:patch
+          npm publish --access public --verbose
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Merge patch -> master
+        uses: devmasx/merge-branch@master
+        with:
+          type: now
+          from_branch: patch
+          target_branch: master
+          message: Merge patch into master
+          github_token: ${{ secrets.GITHUB_TOKEN }}
