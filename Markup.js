@@ -195,7 +195,7 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				console.error({ errors });
+				console.error(JSON.stringify(errors, null, 2));
 				return;
 			}
 
@@ -284,7 +284,7 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				console.error({ errors });
+				console.error(JSON.stringify(errors, null, 2));
 				return;
 			}
 
