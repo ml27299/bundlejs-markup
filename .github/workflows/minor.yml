@@ -1,4 +1,4 @@
-name: Deploying @bundlejs/mobx npm package
+name: Deploying @bundlejs/markup npm package
 on:
   push:
     branches:
