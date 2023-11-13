@@ -193,7 +193,8 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				throw errors[0].exception;
+				console.error({ errors });
+				return;
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
@@ -281,8 +282,8 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				console.log({ errors });
-				throw errors[0].exception;
+				console.error({ errors });
+				return;
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
@@ -294,9 +295,6 @@ class Markup {
 
 			return data[name];
 		} catch (err) {
-			console.error(err);
-			console.error(Object.keys(err));
-			console.error(err.networkError.result.errors);
 			onLoading(false);
 			throw err;
 		}
