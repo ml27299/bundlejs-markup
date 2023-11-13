@@ -60,9 +60,11 @@ class Markup {
 					const isQuery = !!this.query[operationName];
 					const fragment = isQuery
 						? this.queryFragments[`${operationName}QueryFragment`] ||
-						  this.queryFragments[operationName]
+						  this.queryFragments[operationName] ||
+						  this.queryFragments[`${operationName}Fragment`]
 						: this.mutationFragments[`${operationName}MutationFragment`] ||
-						  this.mutationFragments[operationName];
+						  this.mutationFragments[operationName] ||
+						  this.mutationFragments[`${operationName}Fragment`];
 					if (!options.fragment) options.fragment = fragment;
 					return this[isQuery ? "query" : "mutation"](
 						variables,
