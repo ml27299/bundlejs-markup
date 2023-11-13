@@ -1,5 +1,4 @@
 module.exports = {
-	presets: ["react-app"],
 	plugins: [
 		["source-map-support"],
 		["@babel/plugin-transform-runtime"],

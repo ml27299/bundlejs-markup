@@ -1,0 +1,9 @@
+{
+  "name": "createAccount",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneAccountInput!"
+    }
+  ]
+}

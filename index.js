@@ -3,7 +3,7 @@ import Markup from "./Markup";
 let settings = { markup: {} };
 
 export const registerMarkup = (markup = {}) => {
-	settings = Object.assign({}, settings["markup"], markup);
+	settings["markup"] = Object.assign({}, settings["markup"], markup);
 };
 
 export const registerApolloClient = (apolloClient, options = {}) => {

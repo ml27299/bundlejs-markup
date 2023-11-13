@@ -13,9 +13,15 @@ class Markup {
 		this.queryFragments = queries || {};
 		this.mutationFragments = mutations || {};
 		this.validations = validations || {};
+		this.fragments = {
+			...this.queryFragments,
+			...this.mutationFragments,
+		};
 
 		this.queryOperations = {};
 		this.mutationOperations = {};
+
+		this.__init();
 	}
 
 	__init() {
@@ -24,20 +30,20 @@ class Markup {
 		const operationNames = [];
 		queryFragmentNames.forEach((name) =>
 			operationNames.push({
-				name: name.replace("QueryFragment", ""),
+				name: name.replace("QueryFragment", "").replace("Fragment", ""),
 				type: "query",
 			})
 		);
 		mutationFragmentNames.forEach((name) =>
 			operationNames.push({
-				name: name.replace("MutationFragment", ""),
+				name: name.replace("MutationFragment", "").replace("Fragment", ""),
 				type: "mutation",
 			})
 		);
 
 		operationNames.forEach(
 			({ name, type }) =>
-				(this[`${type}Operations`][name] = this.baseFn(name, type))
+				(this[`${type}Operations`][name] = this.__baseFn(name, type))
 		);
 
 		const response = {};
@@ -53,8 +59,10 @@ class Markup {
 				try {
 					const isQuery = !!this.query[operationName];
 					const fragment = isQuery
-						? this.queryFragments[`${operationName}QueryFragment`]
-						: this.mutationFragments[`${operationName}MutationFragment`];
+						? this.queryFragments[`${operationName}QueryFragment`] ||
+						  this.queryFragments[operationName]
+						: this.mutationFragments[`${operationName}MutationFragment`] ||
+						  this.mutationFragments[operationName];
 					if (!options.fragment) options.fragment = fragment;
 					return this[isQuery ? "query" : "mutation"](
 						variables,
@@ -65,47 +73,47 @@ class Markup {
 					throw err;
 				}
 			};
-			response[operationName] = fn;
-			if (isQuery) response[`get${ucFirst(operationName)}`] = fn;
+			this[operationName] = fn;
+			if (isQuery) this[`get${ucFirst(operationName)}`] = fn;
 		}
-
-		return response;
 	}
 
 	__baseFn(name, type) {
-		const { markup } = getSettings();
-		return async () => {
+		return async (fragment) => {
+			const { markup } = getSettings();
 			try {
-				var markupJson = await markup[name];
+				var { default: markupJson } = await markup[name]();
 			} catch (err) {
 				throw err;
 			}
-			return (fragment) => {
-				if (isBool(fragment)) fragment = null;
+			if (isBool(fragment))
 				return gql`
 					${this.__generateOperationMarkupString(type, markupJson, fragment)}
 				`;
-			};
+			return gql`
+				${fragment}
+				${this.__generateOperationMarkupString(type, markupJson, fragment)}
+			`;
 		};
 	}
 
 	__generateOperationMarkupString(type, json, fragment) {
 		const { name, args } = json;
 		if (fragment) {
+			const fragmentName = fragment.definitions[0].name.value;
 			return `
-            ${fragment}
             ${type} ${ucFirst(name)}(${args.map(
-				(arg) => `$${arg.name}: ${arg.type}}`
+				(arg) => `$${arg.name}: ${arg.type}`
 			)}) {
                 ${name}(${args.map((arg) => `${arg.name}: $${arg.name}`)}) {
-                    ...${name}${ucFirst(type)}Fragment
+                    ...${fragmentName}
                 }
             }
         `;
 		}
 		return `
         ${type} ${ucFirst(name)}(${args.map(
-			(arg) => `$${arg.name}: ${arg.type}}`
+			(arg) => `$${arg.name}: ${arg.type}`
 		)}) {
             ${name}(${args.map((arg) => `${arg.name}: $${arg.name}`)}) 
         }
@@ -139,7 +147,7 @@ class Markup {
 			if (this.queryOperations[name]) {
 				var query = await this.queryOperations[name](fragment);
 			} else {
-				const operation = this.baseFn(name, "query");
+				const operation = this.__baseFn(name, "query");
 				var query = await operation(fragment);
 			}
 
@@ -229,7 +237,7 @@ class Markup {
 			if (this.mutationOperations[name]) {
 				var mutation = await this.mutationOperations[name](fragment);
 			} else {
-				const operation = this.baseFn(name, "mutation");
+				const operation = this.__baseFn(name, "mutation");
 				var mutation = await operation(fragment);
 			}
 
@@ -264,7 +272,7 @@ class Markup {
 					? apolloBatchClientOptions.errorPolicy
 					: apolloClientOptions.errorPolicy);
 
-			const { data, errors } = apollo.mutate({
+			const { data, errors } = await apollo.mutate({
 				mutation,
 				variables,
 				fetchPolicy,
@@ -273,6 +281,7 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
+				console.log({ errors });
 				throw errors[0].exception;
 			}
 
@@ -285,6 +294,9 @@ class Markup {
 
 			return data[name];
 		} catch (err) {
+			console.error(err);
+			console.error(Object.keys(err));
+			console.error(err.networkError.result.errors);
 			onLoading(false);
 			throw err;
 		}
