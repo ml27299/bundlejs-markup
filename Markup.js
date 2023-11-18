@@ -46,7 +46,6 @@ class Markup {
 				(this[`${type}Operations`][name] = this.__baseFn(name, type))
 		);
 
-		const response = {};
 		const operations = Object.assign(
 			{},
 			this.queryOperations,
@@ -54,10 +53,10 @@ class Markup {
 		);
 
 		for (const operationName in operations) {
-			const isQuery = !!this.query[operationName];
+			const isQuery = !!this.queryOperations[operationName];
 			const fn = (variables, options = {}) => {
 				try {
-					const isQuery = !!this.query[operationName];
+					const isQuery = !!this.queryOperations[operationName];
 					const fragment = isQuery
 						? this.queryFragments[`${operationName}QueryFragment`] ||
 						  this.queryFragments[operationName] ||
