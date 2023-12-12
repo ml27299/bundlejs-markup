@@ -194,8 +194,7 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				console.error(JSON.stringify(errors, null, 2));
-				return;
+				throw new Error(errors[0].message);
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
@@ -283,8 +282,7 @@ class Markup {
 			});
 
 			if (errors && errors.length > 0) {
-				console.error(JSON.stringify(errors, null, 2));
-				return;
+				throw new Error(errors[0].message);
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
