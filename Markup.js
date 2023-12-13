@@ -102,6 +102,14 @@ class Markup {
 		const { name, args } = json;
 		if (fragment) {
 			const fragmentName = fragment.definitions[0].name.value;
+			if (args.length === 0)
+				return `
+				${type} ${ucFirst(name)} {
+					${name} {
+						...${fragmentName}
+					}
+				}
+			`;
 			return `
             ${type} ${ucFirst(name)}(${args.map(
 				(arg) => `$${arg.name}: ${arg.type}`
@@ -112,6 +120,12 @@ class Markup {
             }
         `;
 		}
+		if (args.length === 0)
+			return `
+			${type} ${ucFirst(name)} {
+				${name}
+			}
+		`;
 		return `
         ${type} ${ucFirst(name)}(${args.map(
 			(arg) => `$${arg.name}: ${arg.type}`
