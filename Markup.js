@@ -89,7 +89,7 @@ class Markup {
 			}
 			if (isBool(fragment))
 				return gql`
-					${this.__generateOperationMarkupString(type, markupJson, fragment)}
+					${this.__generateOperationMarkupString(type, markupJson)}
 				`;
 			return gql`
 				${fragment}
