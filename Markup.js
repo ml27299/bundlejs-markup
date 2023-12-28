@@ -152,12 +152,7 @@ class Markup {
 		name = required`name`
 	) {
 		try {
-			const {
-				apolloClient,
-				apolloBatchClient,
-				apolloClientOptions,
-				apolloBatchClientOptions,
-			} = getSettings();
+			const { apolloClient, apolloBatchClient } = getSettings();
 
 			if (this.queryOperations[name]) {
 				var query = await this.queryOperations[name](fragment);
@@ -187,25 +182,17 @@ class Markup {
 
 			const apollo = customClient || (batch ? apolloBatchClient : apolloClient);
 
-			fetchPolicy =
-				fetchPolicy ||
-				(batch
-					? apolloBatchClientOptions.fetchPolicy
-					: apolloClientOptions.fetchPolicy);
-
-			errorPolicy =
-				errorPolicy ||
-				(batch
-					? apolloBatchClientOptions.errorPolicy
-					: apolloClientOptions.errorPolicy);
-
-			const { data, errors } = await apollo.query({
-				query,
-				variables,
-				fetchPolicy,
-				errorPolicy,
-				context,
-			});
+			const { data, errors } = await apollo.query(
+				Object.assign(
+					{
+						query,
+						variables,
+						context,
+					},
+					fetchPolicy ? { fetchPolicy } : {},
+					errorPolicy ? { errorPolicy } : {}
+				)
+			);
 
 			if (errors && errors.length > 0) {
 				throw new Error(errors[0].message);
@@ -214,7 +201,10 @@ class Markup {
 			if (!keepTypeName) omitDeep(data, "__typename");
 			onLoading(false);
 
-			if (fetchPolicy === "network-only") {
+			if (
+				fetchPolicy === "network-only" ||
+				apollo.defaultOptions.query.fetchPolicy === "network-only"
+			) {
 				await apollo.cache.reset();
 			}
 
@@ -242,12 +232,7 @@ class Markup {
 		name = required`name`
 	) {
 		try {
-			const {
-				apolloClient,
-				apolloBatchClient,
-				apolloClientOptions,
-				apolloBatchClientOptions,
-			} = getSettings();
+			const { apolloClient, apolloBatchClient } = getSettings();
 
 			if (this.mutationOperations[name]) {
 				var mutation = await this.mutationOperations[name](fragment);
@@ -275,25 +260,17 @@ class Markup {
 
 			const apollo = customClient || (batch ? apolloBatchClient : apolloClient);
 
-			fetchPolicy =
-				fetchPolicy ||
-				(batch
-					? apolloBatchClientOptions.fetchPolicy
-					: apolloClientOptions.fetchPolicy);
-
-			errorPolicy =
-				errorPolicy ||
-				(batch
-					? apolloBatchClientOptions.errorPolicy
-					: apolloClientOptions.errorPolicy);
-
-			const { data, errors } = await apollo.mutate({
-				mutation,
-				variables,
-				fetchPolicy,
-				errorPolicy: "all",
-				context,
-			});
+			const { data, errors } = await apollo.mutate(
+				Object.assign(
+					{
+						mutation,
+						variables,
+						context,
+					},
+					fetchPolicy ? { fetchPolicy } : {},
+					errorPolicy ? { errorPolicy } : {}
+				)
+			);
 
 			if (errors && errors.length > 0) {
 				throw new Error(errors[0].message);
@@ -302,7 +279,10 @@ class Markup {
 			if (!keepTypeName) omitDeep(data, "__typename");
 			onLoading(false);
 
-			if (fetchPolicy === "network-only") {
+			if (
+				fetchPolicy === "network-only" ||
+				apollo.defaultOptions.mutate.fetchPolicy === "network-only"
+			) {
 				await apollo.cache.reset();
 			}
 

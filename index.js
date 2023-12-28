@@ -6,17 +6,15 @@ export const registerMarkup = (markup = {}) => {
 	settings["markup"] = Object.assign({}, settings["markup"], markup);
 };
 
-export const registerApolloClient = (apolloClient, options = {}) => {
+export const registerApolloClient = (apolloClient) => {
 	settings = Object.assign({}, settings, {
 		apolloClient,
-		apolloClientOptions: options,
 	});
 };
 
-export const registerApolloBatchClient = (apolloBatchClient, options = {}) => {
+export const registerApolloBatchClient = (apolloBatchClient) => {
 	settings = Object.assign({}, settings, {
 		apolloBatchClient,
-		apolloBatchClientOptions: options,
 	});
 };
 
