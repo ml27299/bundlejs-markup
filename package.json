@@ -1,6 +1,6 @@
 {
 	"name": "@bundlejs/markup",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"repository": "git@github.com:ml27299/bundlejs-markup.git",
 	"engines": {
 		"node": ">=10.15.0",
