@@ -203,7 +203,8 @@ class Markup {
 
 			if (
 				fetchPolicy === "network-only" ||
-				apollo.defaultOptions.query.fetchPolicy === "network-only"
+				(!fetchPolicy &&
+					apollo.defaultOptions.query.fetchPolicy === "network-only")
 			) {
 				await apollo.cache.reset();
 			}
@@ -281,7 +282,8 @@ class Markup {
 
 			if (
 				fetchPolicy === "network-only" ||
-				apollo.defaultOptions.mutate.fetchPolicy === "network-only"
+				(!fetchPolicy &&
+					apollo.defaultOptions.mutate.fetchPolicy === "network-only")
 			) {
 				await apollo.cache.reset();
 			}
