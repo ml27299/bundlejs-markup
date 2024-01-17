@@ -18,6 +18,12 @@ export const registerApolloBatchClient = (apolloBatchClient) => {
 	});
 };
 
+export const registerContext = (context) => {
+	settings = Object.assign({}, settings, {
+		context,
+	});
+};
+
 export const getSettings = () => settings;
 
 export default Markup;

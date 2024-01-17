@@ -152,7 +152,11 @@ class Markup {
 		name = required`name`
 	) {
 		try {
-			const { apolloClient, apolloBatchClient } = getSettings();
+			const {
+				apolloClient,
+				apolloBatchClient,
+				context: settingsContext = {},
+			} = getSettings();
 
 			if (this.queryOperations[name]) {
 				var query = await this.queryOperations[name](fragment);
@@ -187,7 +191,7 @@ class Markup {
 					{
 						query,
 						variables,
-						context,
+						context: Object.assign({}, settingsContext, context || {}),
 					},
 					fetchPolicy ? { fetchPolicy } : {},
 					errorPolicy ? { errorPolicy } : {}
@@ -233,7 +237,11 @@ class Markup {
 		name = required`name`
 	) {
 		try {
-			const { apolloClient, apolloBatchClient } = getSettings();
+			const {
+				apolloClient,
+				apolloBatchClient,
+				context: settingsContext = {},
+			} = getSettings();
 
 			if (this.mutationOperations[name]) {
 				var mutation = await this.mutationOperations[name](fragment);
@@ -266,7 +274,7 @@ class Markup {
 					{
 						mutation,
 						variables,
-						context,
+						context: Object.assign({}, settingsContext, context || {}),
 					},
 					fetchPolicy ? { fetchPolicy } : {},
 					errorPolicy ? { errorPolicy } : {}
