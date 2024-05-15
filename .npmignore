@@ -4,3 +4,10 @@ utils
 index.js
 Markup.js
 node_modules
+.babelrc.js
+.prettierrc.json
+Makefile
+webpack.config.js
+.git
+.github
+.vscode
