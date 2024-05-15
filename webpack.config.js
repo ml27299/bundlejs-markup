@@ -12,7 +12,7 @@ module.exports = ({} = {}) => {
 		devtool: "source-map",
 		externals: [nodeExternals()],
 		optimization: {
-			minimize: false,
+			minimize: true,
 		},
 		resolve: {
 			extensions: [".mjs", ".js", ".jsx"],
