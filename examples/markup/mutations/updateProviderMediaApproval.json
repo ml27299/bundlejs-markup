@@ -1,0 +1,13 @@
+{
+  "name": "updateProviderMediaApproval",
+  "args": [
+    {
+      "name": "provider",
+      "type": "ID!"
+    },
+    {
+      "name": "key",
+      "type": "ID!"
+    }
+  ]
+}

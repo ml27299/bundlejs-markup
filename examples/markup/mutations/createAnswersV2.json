@@ -1,0 +1,9 @@
+{
+  "name": "createAnswersV2",
+  "args": [
+    {
+      "name": "records",
+      "type": "[CreateManyAnswerInput!]!"
+    }
+  ]
+}

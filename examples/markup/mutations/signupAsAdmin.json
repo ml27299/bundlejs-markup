@@ -1,0 +1,9 @@
+{
+  "name": "signupAsAdmin",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneAccountInput!"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "paginateProvidersFunnelsStepsConfigurationsV2",
+  "args": [
+    {
+      "name": "page",
+      "type": "Int"
+    },
+    {
+      "name": "perPage",
+      "type": "Int"
+    },
+    {
+      "name": "filter",
+      "type": "FilterFindManyProviderFunnelStepConfigurationInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

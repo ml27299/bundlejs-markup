@@ -1,0 +1,21 @@
+{
+  "name": "updateEmployeeV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneEmployeeInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneEmployeeInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

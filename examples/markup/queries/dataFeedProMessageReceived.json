@@ -1,0 +1,17 @@
+{
+  "name": "dataFeedProMessageReceived",
+  "args": [
+    {
+      "name": "leadId",
+      "type": "ID!"
+    },
+    {
+      "name": "proId",
+      "type": "ID!"
+    },
+    {
+      "name": "messageId",
+      "type": "ID!"
+    }
+  ]
+}

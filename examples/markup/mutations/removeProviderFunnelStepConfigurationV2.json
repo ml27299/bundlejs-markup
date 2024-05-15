@@ -1,0 +1,13 @@
+{
+  "name": "removeProviderFunnelStepConfigurationV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneProviderFunnelStepConfigurationInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

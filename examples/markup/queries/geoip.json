@@ -1,0 +1,9 @@
+{
+  "name": "geoip",
+  "args": [
+    {
+      "name": "ip",
+      "type": "String!"
+    }
+  ]
+}

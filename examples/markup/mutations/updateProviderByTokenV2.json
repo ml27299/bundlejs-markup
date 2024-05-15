@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

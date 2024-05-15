@@ -1,0 +1,13 @@
+{
+  "name": "removeAnswerV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneAnswerInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

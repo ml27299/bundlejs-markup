@@ -1,0 +1,9 @@
+{
+  "name": "countCategoriesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountCategoryInput"
+    }
+  ]
+}

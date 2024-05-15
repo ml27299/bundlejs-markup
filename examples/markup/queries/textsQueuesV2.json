@@ -1,0 +1,21 @@
+{
+  "name": "textsQueuesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyTextQueueInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

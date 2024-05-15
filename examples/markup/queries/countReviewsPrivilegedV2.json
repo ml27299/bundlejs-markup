@@ -1,0 +1,9 @@
+{
+  "name": "countReviewsPrivilegedV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountReviewInput"
+    }
+  ]
+}

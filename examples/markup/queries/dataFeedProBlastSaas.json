@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProBlastSaas",
+  "args": [
+    {
+      "name": "accountId",
+      "type": "ID!"
+    }
+  ]
+}

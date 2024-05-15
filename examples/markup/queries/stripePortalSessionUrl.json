@@ -1,0 +1,9 @@
+{
+  "name": "stripePortalSessionUrl",
+  "args": [
+    {
+      "name": "return_url",
+      "type": "String!"
+    }
+  ]
+}

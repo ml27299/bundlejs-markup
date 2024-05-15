@@ -1,0 +1,9 @@
+{
+  "name": "transactionsByProvider",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    }
+  ]
+}

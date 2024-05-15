@@ -1,0 +1,13 @@
+{
+  "name": "dataFeedProMatchedLeadOpportunity",
+  "args": [
+    {
+      "name": "proId",
+      "type": "ID!"
+    },
+    {
+      "name": "leadId",
+      "type": "ID!"
+    }
+  ]
+}

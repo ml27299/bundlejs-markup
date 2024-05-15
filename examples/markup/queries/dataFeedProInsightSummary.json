@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProInsightSummary",
+  "args": [
+    {
+      "name": "accountId",
+      "type": "ID!"
+    }
+  ]
+}

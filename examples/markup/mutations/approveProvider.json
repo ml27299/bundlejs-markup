@@ -1,0 +1,13 @@
+{
+  "name": "approveProvider",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "autoApproved",
+      "type": "Boolean"
+    }
+  ]
+}

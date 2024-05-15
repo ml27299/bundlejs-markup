@@ -1,0 +1,17 @@
+{
+  "name": "leadV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneLeadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

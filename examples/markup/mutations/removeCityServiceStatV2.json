@@ -1,0 +1,13 @@
+{
+  "name": "removeCityServiceStatV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneCityServiceStatInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

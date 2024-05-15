@@ -1,0 +1,9 @@
+{
+  "name": "updateSubscriptionPortalConfiguration",
+  "args": [
+    {
+      "name": "data",
+      "type": "JSON!"
+    }
+  ]
+}

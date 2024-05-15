@@ -1,0 +1,17 @@
+{
+  "name": "stateV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneStateInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

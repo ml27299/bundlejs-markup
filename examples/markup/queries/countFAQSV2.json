@@ -1,0 +1,9 @@
+{
+  "name": "countFAQSV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountFAQInput"
+    }
+  ]
+}

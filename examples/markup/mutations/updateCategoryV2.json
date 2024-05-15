@@ -1,0 +1,21 @@
+{
+  "name": "updateCategoryV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneCategoryInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneCategoryInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

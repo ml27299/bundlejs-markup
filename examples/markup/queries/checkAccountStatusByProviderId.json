@@ -1,0 +1,9 @@
+{
+  "name": "checkAccountStatusByProviderId",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    }
+  ]
+}

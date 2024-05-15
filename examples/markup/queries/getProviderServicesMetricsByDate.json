@@ -1,0 +1,21 @@
+{
+  "name": "getProviderServicesMetricsByDate",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "MongoID!"
+    },
+    {
+      "name": "startDate",
+      "type": "Date!"
+    },
+    {
+      "name": "endDate",
+      "type": "Date!"
+    },
+    {
+      "name": "periodOverPeriod",
+      "type": "Boolean"
+    }
+  ]
+}

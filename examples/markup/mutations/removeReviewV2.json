@@ -1,0 +1,13 @@
+{
+  "name": "removeReviewV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneReviewInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

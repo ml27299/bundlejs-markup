@@ -1,0 +1,9 @@
+{
+  "name": "createBookingResourceByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneBookingResourceInput!"
+    }
+  ]
+}

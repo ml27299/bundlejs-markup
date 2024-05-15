@@ -1,0 +1,13 @@
+{
+  "name": "banProvider",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "reason",
+      "type": "String"
+    }
+  ]
+}

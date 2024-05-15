@@ -1,0 +1,9 @@
+{
+  "name": "matchedLeads",
+  "args": [
+    {
+      "name": "proId",
+      "type": "ID!"
+    }
+  ]
+}

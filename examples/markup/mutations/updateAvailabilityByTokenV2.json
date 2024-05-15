@@ -1,0 +1,21 @@
+{
+  "name": "updateAvailabilityByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneAvailabilityInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneAvailabilityInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

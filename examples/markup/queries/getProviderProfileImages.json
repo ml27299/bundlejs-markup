@@ -1,0 +1,17 @@
+{
+  "name": "getProviderProfileImages",
+  "args": [
+    {
+      "name": "providerIds",
+      "type": "[MongoID]"
+    },
+    {
+      "name": "height",
+      "type": "Int"
+    },
+    {
+      "name": "width",
+      "type": "Int"
+    }
+  ]
+}

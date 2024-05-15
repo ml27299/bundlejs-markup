@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderBusinessHourByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderBusinessHourInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderBusinessHourInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

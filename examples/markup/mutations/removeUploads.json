@@ -1,0 +1,9 @@
+{
+  "name": "removeUploads",
+  "args": [
+    {
+      "name": "ids",
+      "type": "[ID]!"
+    }
+  ]
+}

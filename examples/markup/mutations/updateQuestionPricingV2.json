@@ -1,0 +1,21 @@
+{
+  "name": "updateQuestionPricingV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneQuestionPricingInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneQuestionPricingInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

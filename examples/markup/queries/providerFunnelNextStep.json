@@ -1,0 +1,25 @@
+{
+  "name": "providerFunnelNextStep",
+  "args": [
+    {
+      "name": "serviceKey",
+      "type": "ID"
+    },
+    {
+      "name": "currentStepId",
+      "type": "String"
+    },
+    {
+      "name": "isOnboarding",
+      "type": "Boolean"
+    },
+    {
+      "name": "isServiceSetup",
+      "type": "Boolean"
+    },
+    {
+      "name": "isBoost",
+      "type": "Boolean"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "createMessageByClientTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneMessageInput!"
+    }
+  ]
+}

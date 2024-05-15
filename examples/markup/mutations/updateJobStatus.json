@@ -1,0 +1,9 @@
+{
+  "name": "updateJobStatus",
+  "args": [
+    {
+      "name": "input",
+      "type": "UpdateJobStatusInput"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "updateServiceSubscriptionV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneServiceSubscriptionInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneServiceSubscriptionInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

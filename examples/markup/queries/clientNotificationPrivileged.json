@@ -1,0 +1,9 @@
+{
+  "name": "clientNotificationPrivileged",
+  "args": [
+    {
+      "name": "clientId",
+      "type": "String!"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "isExactMatch",
+  "args": [
+    {
+      "name": "leadId",
+      "type": "String!"
+    },
+    {
+      "name": "proId",
+      "type": "String!"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "createQuestionPricingV2",
+  "args": [
+    {
+      "name": "records",
+      "type": "[CreateManyQuestionPricingInput!]!"
+    }
+  ]
+}

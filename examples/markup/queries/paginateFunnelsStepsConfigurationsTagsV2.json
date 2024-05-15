@@ -1,0 +1,21 @@
+{
+  "name": "paginateFunnelsStepsConfigurationsTagsV2",
+  "args": [
+    {
+      "name": "page",
+      "type": "Int"
+    },
+    {
+      "name": "perPage",
+      "type": "Int"
+    },
+    {
+      "name": "filter",
+      "type": "FilterFindManyFunnelStepConfigurationTagInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

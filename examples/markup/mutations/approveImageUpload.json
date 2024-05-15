@@ -1,0 +1,13 @@
+{
+  "name": "approveImageUpload",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "userType",
+      "type": "ImageUploadUserTypeEnum!"
+    }
+  ]
+}

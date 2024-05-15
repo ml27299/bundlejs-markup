@@ -1,0 +1,17 @@
+{
+  "name": "sitemapV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneSitemapInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

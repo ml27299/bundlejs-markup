@@ -1,0 +1,9 @@
+{
+  "name": "createProviderCreditCard",
+  "args": [
+    {
+      "name": "nonce",
+      "type": "String!"
+    }
+  ]
+}

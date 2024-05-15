@@ -1,0 +1,21 @@
+{
+  "name": "updateUploadV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneUploadInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneUploadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "paginateStatesV2",
+  "args": [
+    {
+      "name": "page",
+      "type": "Int"
+    },
+    {
+      "name": "perPage",
+      "type": "Int"
+    },
+    {
+      "name": "filter",
+      "type": "FilterFindManyStateInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

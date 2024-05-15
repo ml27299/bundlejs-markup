@@ -1,0 +1,9 @@
+{
+  "name": "subscriptionPortalSessionUrl",
+  "args": [
+    {
+      "name": "return_url",
+      "type": "String!"
+    }
+  ]
+}

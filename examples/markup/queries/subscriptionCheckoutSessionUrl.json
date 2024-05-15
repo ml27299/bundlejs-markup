@@ -1,0 +1,17 @@
+{
+  "name": "subscriptionCheckoutSessionUrl",
+  "args": [
+    {
+      "name": "success_url",
+      "type": "String!"
+    },
+    {
+      "name": "cancel_url",
+      "type": "String!"
+    },
+    {
+      "name": "subscription_id",
+      "type": "ID!"
+    }
+  ]
+}

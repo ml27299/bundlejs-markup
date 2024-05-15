@@ -1,0 +1,9 @@
+{
+  "name": "addProviderMediaPictures",
+  "args": [
+    {
+      "name": "hashes",
+      "type": "[ID]!"
+    }
+  ]
+}

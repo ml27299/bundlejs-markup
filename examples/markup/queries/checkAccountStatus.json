@@ -1,0 +1,13 @@
+{
+  "name": "checkAccountStatus",
+  "args": [
+    {
+      "name": "email",
+      "type": "String!"
+    },
+    {
+      "name": "id",
+      "type": "ID"
+    }
+  ]
+}

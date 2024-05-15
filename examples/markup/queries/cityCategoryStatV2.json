@@ -1,0 +1,17 @@
+{
+  "name": "cityCategoryStatV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneCityCategoryStatInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

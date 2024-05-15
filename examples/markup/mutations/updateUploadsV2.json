@@ -1,0 +1,25 @@
+{
+  "name": "updateUploadsV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateManyUploadInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateManyUploadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

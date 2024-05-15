@@ -1,0 +1,13 @@
+{
+  "name": "removeLeadV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneLeadInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

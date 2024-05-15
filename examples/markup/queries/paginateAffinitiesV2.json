@@ -1,0 +1,21 @@
+{
+  "name": "paginateAffinitiesV2",
+  "args": [
+    {
+      "name": "page",
+      "type": "Int"
+    },
+    {
+      "name": "perPage",
+      "type": "Int"
+    },
+    {
+      "name": "filter",
+      "type": "FilterFindManyAffinityInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

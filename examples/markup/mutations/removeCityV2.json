@@ -1,0 +1,13 @@
+{
+  "name": "removeCityV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneCityInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

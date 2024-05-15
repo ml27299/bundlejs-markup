@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProTransactionFailed",
+  "args": [
+    {
+      "name": "accountId",
+      "type": "ID!"
+    }
+  ]
+}

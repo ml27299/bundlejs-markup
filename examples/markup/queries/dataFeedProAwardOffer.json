@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProAwardOffer",
+  "args": [
+    {
+      "name": "accountId",
+      "type": "ID!"
+    }
+  ]
+}

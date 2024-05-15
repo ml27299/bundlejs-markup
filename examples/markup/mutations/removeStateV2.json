@@ -1,0 +1,13 @@
+{
+  "name": "removeStateV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneStateInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

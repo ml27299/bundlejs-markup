@@ -1,0 +1,9 @@
+{
+  "name": "createAnswerV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneAnswerInput!"
+    }
+  ]
+}

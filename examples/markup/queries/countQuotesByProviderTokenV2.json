@@ -1,0 +1,9 @@
+{
+  "name": "countQuotesByProviderTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountQuoteInput"
+    }
+  ]
+}

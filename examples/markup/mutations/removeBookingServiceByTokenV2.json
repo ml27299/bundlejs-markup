@@ -1,0 +1,13 @@
+{
+  "name": "removeBookingServiceByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneBookingServiceInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

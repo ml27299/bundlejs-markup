@@ -1,0 +1,13 @@
+{
+  "name": "removeQuestionPricingV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveManyQuestionPricingInput!"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "updateMessagesByClientTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateManyMessageInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateManyMessageInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

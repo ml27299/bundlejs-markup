@@ -1,0 +1,9 @@
+{
+  "name": "deleteProviderCreditCard",
+  "args": [
+    {
+      "name": "token",
+      "type": "String!"
+    }
+  ]
+}

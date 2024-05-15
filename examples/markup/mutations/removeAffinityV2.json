@@ -1,0 +1,13 @@
+{
+  "name": "removeAffinityV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneAffinityInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

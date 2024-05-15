@@ -1,0 +1,13 @@
+{
+  "name": "updateAccountPrivileged",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    },
+    {
+      "name": "input",
+      "type": "UpdateAccountInput!"
+    }
+  ]
+}

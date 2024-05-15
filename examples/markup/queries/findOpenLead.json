@@ -1,0 +1,13 @@
+{
+  "name": "findOpenLead",
+  "args": [
+    {
+      "name": "serviceKey",
+      "type": "ID!"
+    },
+    {
+      "name": "zipcode",
+      "type": "String!"
+    }
+  ]
+}

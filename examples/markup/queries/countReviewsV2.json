@@ -1,0 +1,9 @@
+{
+  "name": "countReviewsV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountReviewInput"
+    }
+  ]
+}

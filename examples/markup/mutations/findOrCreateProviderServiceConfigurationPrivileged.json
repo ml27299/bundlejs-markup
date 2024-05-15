@@ -1,0 +1,9 @@
+{
+  "name": "findOrCreateProviderServiceConfigurationPrivileged",
+  "args": [
+    {
+      "name": "input",
+      "type": "FindOrCreateProviderServiceConfigurationInput"
+    }
+  ]
+}

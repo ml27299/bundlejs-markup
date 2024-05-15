@@ -1,0 +1,9 @@
+{
+  "name": "searchByLead",
+  "args": [
+    {
+      "name": "leadKey",
+      "type": "ID"
+    }
+  ]
+}

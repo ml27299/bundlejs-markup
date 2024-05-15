@@ -1,0 +1,13 @@
+{
+  "name": "getProviderClosestCity",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "MongoID!"
+    },
+    {
+      "name": "distance",
+      "type": "Int!"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "countCitiesServicesStatsV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterCountCityServiceStatInput"
+    }
+  ]
+}

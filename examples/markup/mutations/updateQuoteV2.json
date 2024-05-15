@@ -1,0 +1,21 @@
+{
+  "name": "updateQuoteV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneQuoteInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneQuoteInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

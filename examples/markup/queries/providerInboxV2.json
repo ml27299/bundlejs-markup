@@ -1,0 +1,17 @@
+{
+  "name": "providerInboxV2",
+  "args": [
+    {
+      "name": "filterType",
+      "type": "InboxFilterTypeEnum"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    }
+  ]
+}

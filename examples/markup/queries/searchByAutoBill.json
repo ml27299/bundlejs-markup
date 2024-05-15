@@ -1,0 +1,9 @@
+{
+  "name": "searchByAutoBill",
+  "args": [
+    {
+      "name": "leadKey",
+      "type": "ID"
+    }
+  ]
+}

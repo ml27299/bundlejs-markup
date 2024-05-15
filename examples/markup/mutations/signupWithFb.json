@@ -1,0 +1,13 @@
+{
+  "name": "signupWithFb",
+  "args": [
+    {
+      "name": "access_token",
+      "type": "String!"
+    },
+    {
+      "name": "input",
+      "type": "SignupWithFbInput!"
+    }
+  ]
+}

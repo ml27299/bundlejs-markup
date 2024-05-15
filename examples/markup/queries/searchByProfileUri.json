@@ -1,0 +1,9 @@
+{
+  "name": "searchByProfileUri",
+  "args": [
+    {
+      "name": "uri",
+      "type": "String!"
+    }
+  ]
+}

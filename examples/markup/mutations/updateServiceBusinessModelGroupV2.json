@@ -1,0 +1,21 @@
+{
+  "name": "updateServiceBusinessModelGroupV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneServiceBusinessModelGroupInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneServiceBusinessModelGroupInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

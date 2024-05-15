@@ -1,0 +1,13 @@
+{
+  "name": "removeAccountV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneAccountInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

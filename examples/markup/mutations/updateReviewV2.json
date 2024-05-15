@@ -1,0 +1,21 @@
+{
+  "name": "updateReviewV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneReviewInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneReviewInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

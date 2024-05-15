@@ -1,0 +1,9 @@
+{
+  "name": "deleteFunnelStepConfiguration",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

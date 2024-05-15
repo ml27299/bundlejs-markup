@@ -1,0 +1,13 @@
+{
+  "name": "removeClientByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneClientInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

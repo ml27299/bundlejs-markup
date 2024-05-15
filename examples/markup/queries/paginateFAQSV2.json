@@ -1,0 +1,21 @@
+{
+  "name": "paginateFAQSV2",
+  "args": [
+    {
+      "name": "page",
+      "type": "Int"
+    },
+    {
+      "name": "perPage",
+      "type": "Int"
+    },
+    {
+      "name": "filter",
+      "type": "FilterFindManyFAQInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

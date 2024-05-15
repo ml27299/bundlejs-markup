@@ -1,0 +1,9 @@
+{
+  "name": "createProviderServiceChargeByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneProviderServiceChargeInput!"
+    }
+  ]
+}

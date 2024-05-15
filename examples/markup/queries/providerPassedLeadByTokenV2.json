@@ -1,0 +1,17 @@
+{
+  "name": "providerPassedLeadByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneProviderPassedLeadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

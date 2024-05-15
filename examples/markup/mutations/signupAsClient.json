@@ -1,0 +1,9 @@
+{
+  "name": "signupAsClient",
+  "args": [
+    {
+      "name": "input",
+      "type": "SignupAsClientInput!"
+    }
+  ]
+}

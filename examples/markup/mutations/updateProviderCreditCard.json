@@ -1,0 +1,13 @@
+{
+  "name": "updateProviderCreditCard",
+  "args": [
+    {
+      "name": "ccToken",
+      "type": "String!"
+    },
+    {
+      "name": "input",
+      "type": "UpdateProviderCreditCardInput!"
+    }
+  ]
+}

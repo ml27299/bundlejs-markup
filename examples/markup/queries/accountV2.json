@@ -1,0 +1,17 @@
+{
+  "name": "accountV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneAccountInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "approveReview",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

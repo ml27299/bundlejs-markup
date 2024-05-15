@@ -1,0 +1,17 @@
+{
+  "name": "providerMetricReviewViewPrivilegedV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneProviderMetricReviewViewInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

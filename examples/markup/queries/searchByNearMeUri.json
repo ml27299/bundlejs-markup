@@ -1,0 +1,13 @@
+{
+  "name": "searchByNearMeUri",
+  "args": [
+    {
+      "name": "uri",
+      "type": "String!"
+    },
+    {
+      "name": "location",
+      "type": "JSON"
+    }
+  ]
+}

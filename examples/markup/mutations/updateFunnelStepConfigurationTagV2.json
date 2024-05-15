@@ -1,0 +1,21 @@
+{
+  "name": "updateFunnelStepConfigurationTagV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneFunnelStepConfigurationTagInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneFunnelStepConfigurationTagInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

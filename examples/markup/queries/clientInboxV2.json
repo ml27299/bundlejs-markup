@@ -1,0 +1,13 @@
+{
+  "name": "clientInboxV2",
+  "args": [
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    }
+  ]
+}

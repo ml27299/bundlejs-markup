@@ -1,0 +1,21 @@
+{
+  "name": "categoriesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyCategoryInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

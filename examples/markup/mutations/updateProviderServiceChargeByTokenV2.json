@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderServiceChargeByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderServiceChargeInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderServiceChargeInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

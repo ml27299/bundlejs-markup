@@ -1,0 +1,13 @@
+{
+  "name": "publishedContentPages",
+  "args": [
+    {
+      "name": "contentType",
+      "type": "String"
+    },
+    {
+      "name": "site",
+      "type": "String"
+    }
+  ]
+}

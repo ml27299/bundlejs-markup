@@ -1,0 +1,13 @@
+{
+  "name": "approveUploads",
+  "args": [
+    {
+      "name": "ids",
+      "type": "[ID]!"
+    },
+    {
+      "name": "auto_approved",
+      "type": "Boolean"
+    }
+  ]
+}

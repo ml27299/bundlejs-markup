@@ -1,0 +1,17 @@
+{
+  "name": "teamRegistrationV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneTeamRegistrationInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

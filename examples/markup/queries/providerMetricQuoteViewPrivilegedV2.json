@@ -1,0 +1,17 @@
+{
+  "name": "providerMetricQuoteViewPrivilegedV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneProviderMetricQuoteViewInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

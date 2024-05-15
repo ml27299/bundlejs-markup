@@ -1,0 +1,9 @@
+{
+  "name": "createReviewByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneReviewInput!"
+    }
+  ]
+}
