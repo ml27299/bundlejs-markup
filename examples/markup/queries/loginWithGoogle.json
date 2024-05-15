@@ -1,0 +1,9 @@
+{
+  "name": "loginWithGoogle",
+  "args": [
+    {
+      "name": "access_token",
+      "type": "String!"
+    }
+  ]
+}

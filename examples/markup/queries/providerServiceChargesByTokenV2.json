@@ -1,0 +1,21 @@
+{
+  "name": "providerServiceChargesByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyProviderServiceChargeInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

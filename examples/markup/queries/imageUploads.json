@@ -1,0 +1,13 @@
+{
+  "name": "imageUploads",
+  "args": [
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "userType",
+      "type": "ImageUploadUserTypeEnum"
+    }
+  ]
+}

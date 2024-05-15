@@ -1,0 +1,17 @@
+{
+  "name": "providerServiceConfigurationByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneProviderServiceConfigurationInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

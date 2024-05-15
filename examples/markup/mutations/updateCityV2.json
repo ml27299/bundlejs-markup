@@ -1,0 +1,21 @@
+{
+  "name": "updateCityV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneCityInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneCityInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

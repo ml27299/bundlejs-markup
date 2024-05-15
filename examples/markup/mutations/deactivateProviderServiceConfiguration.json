@@ -1,0 +1,9 @@
+{
+  "name": "deactivateProviderServiceConfiguration",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

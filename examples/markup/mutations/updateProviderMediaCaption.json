@@ -1,0 +1,17 @@
+{
+  "name": "updateProviderMediaCaption",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "type",
+      "type": "EnumProviderMediaMedia_type!"
+    },
+    {
+      "name": "caption",
+      "type": "String"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderServiceConfigurationV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderServiceConfigurationInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderServiceConfigurationInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "removeBookingServicePricingByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneBookingServicePricingInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

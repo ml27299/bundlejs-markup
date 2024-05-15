@@ -1,0 +1,21 @@
+{
+  "name": "uploadsV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyUploadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

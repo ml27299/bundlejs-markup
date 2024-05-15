@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderPassedLeadByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderPassedLeadInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderPassedLeadInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

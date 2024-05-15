@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedClientJobStatus",
+  "args": [
+    {
+      "name": "leadId",
+      "type": "ID!"
+    }
+  ]
+}

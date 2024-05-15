@@ -1,0 +1,13 @@
+{
+  "name": "declineQuoteV2",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "isAutoDeclined",
+      "type": "Boolean"
+    }
+  ]
+}

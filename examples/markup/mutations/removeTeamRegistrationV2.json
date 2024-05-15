@@ -1,0 +1,13 @@
+{
+  "name": "removeTeamRegistrationV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneTeamRegistrationInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

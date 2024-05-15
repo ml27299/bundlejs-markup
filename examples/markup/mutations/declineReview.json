@@ -1,0 +1,9 @@
+{
+  "name": "declineReview",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

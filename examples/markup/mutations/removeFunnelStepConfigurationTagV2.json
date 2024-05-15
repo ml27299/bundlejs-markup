@@ -1,0 +1,13 @@
+{
+  "name": "removeFunnelStepConfigurationTagV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneFunnelStepConfigurationTagInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

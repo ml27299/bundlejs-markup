@@ -1,0 +1,13 @@
+{
+  "name": "removeProviderAlertByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneProviderAlertInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

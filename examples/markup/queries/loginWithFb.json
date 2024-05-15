@@ -1,0 +1,9 @@
+{
+  "name": "loginWithFb",
+  "args": [
+    {
+      "name": "access_token",
+      "type": "String!"
+    }
+  ]
+}

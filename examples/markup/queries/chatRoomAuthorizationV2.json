@@ -1,0 +1,21 @@
+{
+  "name": "chatRoomAuthorizationV2",
+  "args": [
+    {
+      "name": "channel",
+      "type": "String!"
+    },
+    {
+      "name": "socketId",
+      "type": "String!"
+    },
+    {
+      "name": "quoteKey",
+      "type": "ID!"
+    },
+    {
+      "name": "dashboard",
+      "type": "ChatRoomAuthorizationDashboardEnum!"
+    }
+  ]
+}

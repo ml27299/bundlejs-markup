@@ -1,0 +1,9 @@
+{
+  "name": "createProviderFunnelStepConfigurationV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneProviderFunnelStepConfigurationInput!"
+    }
+  ]
+}

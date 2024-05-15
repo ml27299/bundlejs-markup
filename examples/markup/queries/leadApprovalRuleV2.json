@@ -1,0 +1,17 @@
+{
+  "name": "leadApprovalRuleV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneLeadApprovalRuleInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "moveProviderMediaByKey",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "direction",
+      "type": "ProviderMediaDirectionEnum!"
+    }
+  ]
+}

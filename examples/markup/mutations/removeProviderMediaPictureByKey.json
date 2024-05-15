@@ -1,0 +1,9 @@
+{
+  "name": "removeProviderMediaPictureByKey",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    }
+  ]
+}

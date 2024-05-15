@@ -1,0 +1,21 @@
+{
+  "name": "statesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyStateInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

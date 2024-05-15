@@ -1,0 +1,17 @@
+{
+  "name": "getProviderBusinessLocationMarkerMap",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "MongoID!"
+    },
+    {
+      "name": "height",
+      "type": "Int"
+    },
+    {
+      "name": "width",
+      "type": "Int"
+    }
+  ]
+}

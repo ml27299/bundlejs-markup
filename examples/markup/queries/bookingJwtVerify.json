@@ -1,0 +1,13 @@
+{
+  "name": "bookingJwtVerify",
+  "args": [
+    {
+      "name": "token",
+      "type": "String"
+    },
+    {
+      "name": "bookingToken",
+      "type": "String"
+    }
+  ]
+}

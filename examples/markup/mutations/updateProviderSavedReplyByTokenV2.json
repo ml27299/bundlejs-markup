@@ -1,0 +1,21 @@
+{
+  "name": "updateProviderSavedReplyByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneProviderSavedReplyInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneProviderSavedReplyInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

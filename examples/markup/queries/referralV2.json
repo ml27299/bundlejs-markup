@@ -1,0 +1,17 @@
+{
+  "name": "referralV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneReferralInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

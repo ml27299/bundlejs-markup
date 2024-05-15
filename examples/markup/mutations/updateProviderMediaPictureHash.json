@@ -1,0 +1,13 @@
+{
+  "name": "updateProviderMediaPictureHash",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "hash",
+      "type": "ID!"
+    }
+  ]
+}

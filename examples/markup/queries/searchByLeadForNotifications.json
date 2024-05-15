@@ -1,0 +1,29 @@
+{
+  "name": "searchByLeadForNotifications",
+  "args": [
+    {
+      "name": "leadId",
+      "type": "ID"
+    },
+    {
+      "name": "includeSuggestedPros",
+      "type": "Boolean"
+    },
+    {
+      "name": "includeDirectPros",
+      "type": "Boolean"
+    },
+    {
+      "name": "maxProsLen",
+      "type": "Int"
+    },
+    {
+      "name": "excludePros",
+      "type": "[ID]"
+    },
+    {
+      "name": "savvyProsOnly",
+      "type": "Boolean"
+    }
+  ]
+}

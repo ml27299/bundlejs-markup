@@ -1,0 +1,17 @@
+{
+  "name": "serviceSubscriptionV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneServiceSubscriptionInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

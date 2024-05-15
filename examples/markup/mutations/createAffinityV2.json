@@ -1,0 +1,9 @@
+{
+  "name": "createAffinityV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneAffinityInput!"
+    }
+  ]
+}

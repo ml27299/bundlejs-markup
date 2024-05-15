@@ -1,0 +1,17 @@
+{
+  "name": "quoteActionPrivilegedV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneQuoteActionInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

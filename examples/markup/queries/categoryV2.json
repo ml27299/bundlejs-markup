@@ -1,0 +1,17 @@
+{
+  "name": "categoryV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneCategoryInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

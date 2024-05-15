@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProRefundIssued",
+  "args": [
+    {
+      "name": "quoteId",
+      "type": "ID!"
+    }
+  ]
+}

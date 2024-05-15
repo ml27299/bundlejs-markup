@@ -1,0 +1,13 @@
+{
+  "name": "publishedContent",
+  "args": [
+    {
+      "name": "folder",
+      "type": "String!"
+    },
+    {
+      "name": "slug",
+      "type": "String!"
+    }
+  ]
+}

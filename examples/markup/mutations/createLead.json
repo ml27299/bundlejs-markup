@@ -1,0 +1,9 @@
+{
+  "name": "createLead",
+  "args": [
+    {
+      "name": "input",
+      "type": "CreateLeadInput"
+    }
+  ]
+}

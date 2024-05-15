@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedClientQuoteReceived",
+  "args": [
+    {
+      "name": "quoteId",
+      "type": "ID!"
+    }
+  ]
+}

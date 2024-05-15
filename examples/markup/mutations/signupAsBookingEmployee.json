@@ -1,0 +1,9 @@
+{
+  "name": "signupAsBookingEmployee",
+  "args": [
+    {
+      "name": "input",
+      "type": "SignupAsBookingEmployeeInput!"
+    }
+  ]
+}

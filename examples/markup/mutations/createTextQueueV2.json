@@ -1,0 +1,9 @@
+{
+  "name": "createTextQueueV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneTextQueueInput!"
+    }
+  ]
+}

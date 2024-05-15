@@ -1,0 +1,9 @@
+{
+  "name": "updateDefaultStripePortalConfiguration",
+  "args": [
+    {
+      "name": "data",
+      "type": "JSON!"
+    }
+  ]
+}

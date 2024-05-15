@@ -1,0 +1,9 @@
+{
+  "name": "addProviderMediaVideo",
+  "args": [
+    {
+      "name": "url",
+      "type": "String!"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cloneQuestionByService",
+  "args": [
+    {
+      "name": "service",
+      "type": "ID!"
+    },
+    {
+      "name": "question",
+      "type": "ID!"
+    },
+    {
+      "name": "input",
+      "type": "CloneQuestionInput"
+    }
+  ]
+}

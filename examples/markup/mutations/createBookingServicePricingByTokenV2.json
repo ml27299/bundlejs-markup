@@ -1,0 +1,9 @@
+{
+  "name": "createBookingServicePricingByTokenV2",
+  "args": [
+    {
+      "name": "records",
+      "type": "[CreateManyBookingServicePricingInput!]!"
+    }
+  ]
+}

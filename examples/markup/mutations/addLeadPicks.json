@@ -1,0 +1,13 @@
+{
+  "name": "addLeadPicks",
+  "args": [
+    {
+      "name": "leadKey",
+      "type": "ID!"
+    },
+    {
+      "name": "providers",
+      "type": "[ID]!"
+    }
+  ]
+}

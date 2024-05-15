@@ -1,0 +1,9 @@
+{
+  "name": "createReportByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneReportInput!"
+    }
+  ]
+}

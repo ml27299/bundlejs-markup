@@ -1,0 +1,17 @@
+{
+  "name": "addImageUploadMeta",
+  "args": [
+    {
+      "name": "imageUploadMeta",
+      "type": "ImageUploadMetaInput!"
+    },
+    {
+      "name": "imageType",
+      "type": "String!"
+    },
+    {
+      "name": "userType",
+      "type": "ImageUploadUserTypeEnum!"
+    }
+  ]
+}

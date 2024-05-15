@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedClientLeadApproved",
+  "args": [
+    {
+      "name": "leadId",
+      "type": "ID!"
+    }
+  ]
+}

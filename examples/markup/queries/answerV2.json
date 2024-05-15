@@ -1,0 +1,17 @@
+{
+  "name": "answerV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneAnswerInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

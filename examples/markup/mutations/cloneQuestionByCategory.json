@@ -1,0 +1,17 @@
+{
+  "name": "cloneQuestionByCategory",
+  "args": [
+    {
+      "name": "category",
+      "type": "ID!"
+    },
+    {
+      "name": "question",
+      "type": "ID!"
+    },
+    {
+      "name": "input",
+      "type": "CloneQuestionInput"
+    }
+  ]
+}

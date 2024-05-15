@@ -1,0 +1,21 @@
+{
+  "name": "employeesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyEmployeeInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

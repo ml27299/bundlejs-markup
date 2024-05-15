@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProAccountCreated",
+  "args": [
+    {
+      "name": "accountId",
+      "type": "ID!"
+    }
+  ]
+}

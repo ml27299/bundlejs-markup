@@ -1,0 +1,17 @@
+{
+  "name": "cityV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneCityInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

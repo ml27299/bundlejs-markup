@@ -1,0 +1,17 @@
+{
+  "name": "reviewV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneReviewInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

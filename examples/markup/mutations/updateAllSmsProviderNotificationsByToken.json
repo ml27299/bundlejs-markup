@@ -1,0 +1,9 @@
+{
+  "name": "updateAllSmsProviderNotificationsByToken",
+  "args": [
+    {
+      "name": "value",
+      "type": "Boolean!"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "declineQuoteV2Privileged",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "isAutoDeclined",
+      "type": "Boolean"
+    }
+  ]
+}

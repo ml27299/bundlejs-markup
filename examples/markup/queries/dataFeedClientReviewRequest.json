@@ -1,0 +1,17 @@
+{
+  "name": "dataFeedClientReviewRequest",
+  "args": [
+    {
+      "name": "clientId",
+      "type": "ID!"
+    },
+    {
+      "name": "proId",
+      "type": "ID!"
+    },
+    {
+      "name": "serviceId",
+      "type": "ID!"
+    }
+  ]
+}

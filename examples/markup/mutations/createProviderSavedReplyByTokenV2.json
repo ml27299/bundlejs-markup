@@ -1,0 +1,9 @@
+{
+  "name": "createProviderSavedReplyByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneProviderSavedReplyInput!"
+    }
+  ]
+}

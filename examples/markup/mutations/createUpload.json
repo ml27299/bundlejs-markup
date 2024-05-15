@@ -1,0 +1,25 @@
+{
+  "name": "createUpload",
+  "args": [
+    {
+      "name": "user_type",
+      "type": "EnumUploadUser_type!"
+    },
+    {
+      "name": "upload_type",
+      "type": "EnumUploadType!"
+    },
+    {
+      "name": "upload_type_id",
+      "type": "String"
+    },
+    {
+      "name": "original_file_name",
+      "type": "String!"
+    },
+    {
+      "name": "hash",
+      "type": "String!"
+    }
+  ]
+}

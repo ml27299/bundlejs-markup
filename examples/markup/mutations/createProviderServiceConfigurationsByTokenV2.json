@@ -1,0 +1,9 @@
+{
+  "name": "createProviderServiceConfigurationsByTokenV2",
+  "args": [
+    {
+      "name": "records",
+      "type": "[CreateManyProviderServiceConfigurationInput!]!"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "removeReportV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneReportInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

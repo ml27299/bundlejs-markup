@@ -1,0 +1,9 @@
+{
+  "name": "uploadsMigrationStatus",
+  "args": [
+    {
+      "name": "user_type",
+      "type": "EnumUploadUser_type!"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "loginToBookingWithToken",
+  "args": [
+    {
+      "name": "token",
+      "type": "String!"
+    }
+  ]
+}

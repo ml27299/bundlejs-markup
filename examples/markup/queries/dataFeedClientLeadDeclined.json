@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedClientLeadDeclined",
+  "args": [
+    {
+      "name": "serviceName",
+      "type": "ID!"
+    }
+  ]
+}

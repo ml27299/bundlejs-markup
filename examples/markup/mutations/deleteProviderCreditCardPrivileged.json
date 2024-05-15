@@ -1,0 +1,13 @@
+{
+  "name": "deleteProviderCreditCardPrivileged",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "token",
+      "type": "String!"
+    }
+  ]
+}

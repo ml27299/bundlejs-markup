@@ -1,0 +1,21 @@
+{
+  "name": "updateStateV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneStateInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneStateInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

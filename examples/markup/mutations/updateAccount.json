@@ -1,0 +1,9 @@
+{
+  "name": "updateAccount",
+  "args": [
+    {
+      "name": "input",
+      "type": "UpdateAccountInput!"
+    }
+  ]
+}

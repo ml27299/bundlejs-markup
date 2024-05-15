@@ -1,0 +1,9 @@
+{
+  "name": "acceptQuoteV2",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    }
+  ]
+}

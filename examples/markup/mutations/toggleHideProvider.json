@@ -1,0 +1,9 @@
+{
+  "name": "toggleHideProvider",
+  "args": [
+    {
+      "name": "date",
+      "type": "Date"
+    }
+  ]
+}

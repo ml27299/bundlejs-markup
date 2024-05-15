@@ -1,0 +1,13 @@
+{
+  "name": "approveLead",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    },
+    {
+      "name": "autoApproved",
+      "type": "Boolean"
+    }
+  ]
+}

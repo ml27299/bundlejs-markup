@@ -1,0 +1,9 @@
+{
+  "name": "createReviewCommentByProviderTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneReviewCommentInput!"
+    }
+  ]
+}

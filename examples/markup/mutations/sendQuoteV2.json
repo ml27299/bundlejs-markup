@@ -1,0 +1,9 @@
+{
+  "name": "sendQuoteV2",
+  "args": [
+    {
+      "name": "input",
+      "type": "SendQuoteInput!"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "moveFunnelStepConfigurationUp",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

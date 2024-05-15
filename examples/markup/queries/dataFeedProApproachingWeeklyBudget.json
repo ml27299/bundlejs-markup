@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProApproachingWeeklyBudget",
+  "args": [
+    {
+      "name": "proId",
+      "type": "ID!"
+    }
+  ]
+}

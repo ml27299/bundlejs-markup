@@ -1,0 +1,9 @@
+{
+  "name": "searchByCityUri",
+  "args": [
+    {
+      "name": "uri",
+      "type": "String!"
+    }
+  ]
+}

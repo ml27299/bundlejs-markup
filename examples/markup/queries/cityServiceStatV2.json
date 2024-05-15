@@ -1,0 +1,17 @@
+{
+  "name": "cityServiceStatV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneCityServiceStatInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

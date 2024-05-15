@@ -1,0 +1,21 @@
+{
+  "name": "updateAccountV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneAccountInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneAccountInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

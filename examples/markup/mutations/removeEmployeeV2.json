@@ -1,0 +1,13 @@
+{
+  "name": "removeEmployeeV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneEmployeeInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "updateProviderSubscription",
+  "args": [
+    {
+      "name": "subscription_id",
+      "type": "ID!"
+    },
+    {
+      "name": "service_id",
+      "type": "ID!"
+    }
+  ]
+}

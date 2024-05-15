@@ -1,0 +1,17 @@
+{
+  "name": "quoteV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneQuoteInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

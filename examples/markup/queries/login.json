@@ -1,0 +1,13 @@
+{
+  "name": "login",
+  "args": [
+    {
+      "name": "email",
+      "type": "String!"
+    },
+    {
+      "name": "password",
+      "type": "String"
+    }
+  ]
+}

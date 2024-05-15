@@ -1,0 +1,9 @@
+{
+  "name": "dataFeedProReviewReceived",
+  "args": [
+    {
+      "name": "reviewId",
+      "type": "ID!"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "updateBookingResourceByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneBookingResourceInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneBookingResourceInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "providersFunnelsStepsV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyProviderFunnelStepInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

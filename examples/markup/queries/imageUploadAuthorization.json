@@ -1,0 +1,13 @@
+{
+  "name": "imageUploadAuthorization",
+  "args": [
+    {
+      "name": "userType",
+      "type": "ImageUploadUserTypeEnum!"
+    },
+    {
+      "name": "imageType",
+      "type": "String!"
+    }
+  ]
+}

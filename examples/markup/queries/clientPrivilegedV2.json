@@ -1,0 +1,17 @@
+{
+  "name": "clientPrivilegedV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneClientInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

@@ -2,8 +2,12 @@ import Markup from "./Markup";
 
 let settings = { markup: {} };
 
-export const registerMarkup = (markup = {}) => {
+export const registerMarkup = (
+	markup = {},
+	{ fragmentArgumentDirectiveName = "args" } = {}
+) => {
 	settings["markup"] = Object.assign({}, settings["markup"], markup);
+	settings["fragmentArgumentDirectiveName"] = fragmentArgumentDirectiveName;
 };
 
 export const registerApolloClient = (apolloClient) => {

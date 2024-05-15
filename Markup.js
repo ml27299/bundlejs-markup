@@ -81,7 +81,7 @@ class Markup {
 
 	__baseFn(name, type) {
 		return async (fragment) => {
-			const { markup } = getSettings();
+			const { markup, fragmentArgumentDirectiveName } = getSettings();
 			try {
 				var { default: markupJson } = await markup[name]();
 			} catch (err) {
@@ -91,6 +91,33 @@ class Markup {
 				return gql`
 					${this.__generateOperationMarkupString(type, markupJson)}
 				`;
+
+			const argsDirectiveIndex = fragment.definitions[0].directives.findIndex(
+				(directive) => directive.name.value === fragmentArgumentDirectiveName
+			);
+			if (argsDirectiveIndex > -1) {
+				const argsDirective =
+					fragment.definitions[0].directives[argsDirectiveIndex];
+				markupJson.args = markupJson.args.concat(
+					argsDirective.arguments.map((arg) => ({
+						name: arg.name.value,
+						type: arg.value.value,
+						skipInline: true,
+					}))
+				);
+				fragment.definitions[0].directives =
+					fragment.definitions[0].directives.filter(
+						(_, i) => i !== argsDirectiveIndex
+					);
+				fragment.loc.source.body = fragment.loc.source.body.replace(
+					new RegExp(
+						`@${fragmentArgumentDirectiveName}\(\[\^\\)\]\+\)\\)`,
+						"mg"
+					),
+					""
+				);
+			}
+
 			return gql`
 				${fragment}
 				${this.__generateOperationMarkupString(type, markupJson, fragment)}
@@ -99,9 +126,11 @@ class Markup {
 	}
 
 	__generateOperationMarkupString(type, json, fragment) {
-		const { name, args } = json;
+		let { name, args } = json;
+		const skipInlineFilter = (arg) => !arg.skipInline;
 		if (fragment) {
 			const fragmentName = fragment.definitions[0].name.value;
+
 			if (args.length === 0)
 				return `
 				${type} ${ucFirst(name)} {
@@ -114,7 +143,9 @@ class Markup {
             ${type} ${ucFirst(name)}(${args.map(
 				(arg) => `$${arg.name}: ${arg.type}`
 			)}) {
-                ${name}(${args.map((arg) => `${arg.name}: $${arg.name}`)}) {
+                ${name}(${args
+				.filter(skipInlineFilter)
+				.map((arg) => `${arg.name}: $${arg.name}`)}) {
                     ...${fragmentName}
                 }
             }
@@ -130,7 +161,9 @@ class Markup {
         ${type} ${ucFirst(name)}(${args.map(
 			(arg) => `$${arg.name}: ${arg.type}`
 		)}) {
-            ${name}(${args.map((arg) => `${arg.name}: $${arg.name}`)}) 
+            ${name}(${args
+			.filter(skipInlineFilter)
+			.map((arg) => `${arg.name}: $${arg.name}`)}) 
         }
     `;
 	}

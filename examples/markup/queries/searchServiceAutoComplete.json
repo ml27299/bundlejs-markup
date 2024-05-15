@@ -1,0 +1,21 @@
+{
+  "name": "searchServiceAutoComplete",
+  "args": [
+    {
+      "name": "prefix",
+      "type": "String"
+    },
+    {
+      "name": "active",
+      "type": "Boolean"
+    },
+    {
+      "name": "midtail",
+      "type": "Boolean"
+    },
+    {
+      "name": "size",
+      "type": "Int"
+    }
+  ]
+}

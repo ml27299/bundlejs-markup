@@ -1,0 +1,9 @@
+{
+  "name": "searchByComboUri",
+  "args": [
+    {
+      "name": "uri",
+      "type": "String!"
+    }
+  ]
+}

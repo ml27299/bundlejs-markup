@@ -1,0 +1,21 @@
+{
+  "name": "providerServiceConfigurationsByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyProviderServiceConfigurationInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

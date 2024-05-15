@@ -1,0 +1,21 @@
+{
+  "name": "updateFAQV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateOneFAQInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateOneFAQInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

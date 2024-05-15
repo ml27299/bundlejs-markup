@@ -1,0 +1,21 @@
+{
+  "name": "questionPricingV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyQuestionPricingInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

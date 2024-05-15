@@ -1,0 +1,9 @@
+{
+  "name": "refundQuote",
+  "args": [
+    {
+      "name": "_id",
+      "type": "ID!"
+    }
+  ]
+}

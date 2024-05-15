@@ -1,0 +1,17 @@
+{
+  "name": "serviceBusinessModelGroupV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneServiceBusinessModelGroupInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

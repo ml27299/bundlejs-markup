@@ -1,0 +1,13 @@
+{
+  "name": "purchaseCreditPackage",
+  "args": [
+    {
+      "name": "price",
+      "type": "Int!"
+    },
+    {
+      "name": "value",
+      "type": "Int!"
+    }
+  ]
+}

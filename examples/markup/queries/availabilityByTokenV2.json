@@ -1,0 +1,17 @@
+{
+  "name": "availabilityByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneAvailabilityInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

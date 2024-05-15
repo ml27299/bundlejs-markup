@@ -1,0 +1,25 @@
+{
+  "name": "updateProvidersAlertsByTokenV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "UpdateManyProviderAlertInput!"
+    },
+    {
+      "name": "filter",
+      "type": "FilterUpdateManyProviderAlertInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

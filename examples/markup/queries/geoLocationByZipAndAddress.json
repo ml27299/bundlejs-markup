@@ -1,0 +1,13 @@
+{
+  "name": "geoLocationByZipAndAddress",
+  "args": [
+    {
+      "name": "zip",
+      "type": "String!"
+    },
+    {
+      "name": "address",
+      "type": "String!"
+    }
+  ]
+}

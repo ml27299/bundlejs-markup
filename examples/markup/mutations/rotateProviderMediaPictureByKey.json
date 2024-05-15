@@ -1,0 +1,13 @@
+{
+  "name": "rotateProviderMediaPictureByKey",
+  "args": [
+    {
+      "name": "key",
+      "type": "ID!"
+    },
+    {
+      "name": "degrees",
+      "type": "Int"
+    }
+  ]
+}

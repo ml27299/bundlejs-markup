@@ -1,0 +1,9 @@
+{
+  "name": "searchByStateUri",
+  "args": [
+    {
+      "name": "uri",
+      "type": "String!"
+    }
+  ]
+}

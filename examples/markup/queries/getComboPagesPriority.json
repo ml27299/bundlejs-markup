@@ -1,0 +1,13 @@
+{
+  "name": "getComboPagesPriority",
+  "args": [
+    {
+      "name": "size",
+      "type": "Int!"
+    },
+    {
+      "name": "min_active_pros",
+      "type": "Int!"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "removeFAQV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneFAQInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

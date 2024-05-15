@@ -1,0 +1,9 @@
+{
+  "name": "createCityV2",
+  "args": [
+    {
+      "name": "record",
+      "type": "CreateOneCityInput!"
+    }
+  ]
+}

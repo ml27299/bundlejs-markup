@@ -1,0 +1,13 @@
+{
+  "name": "dataFeedEmployeeInvite",
+  "args": [
+    {
+      "name": "employeeAccountId",
+      "type": "ID!"
+    },
+    {
+      "name": "inviterAccountId",
+      "type": "ID!"
+    }
+  ]
+}

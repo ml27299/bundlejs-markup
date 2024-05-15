@@ -1,0 +1,13 @@
+{
+  "name": "dataFeedProDirectLead",
+  "args": [
+    {
+      "name": "proId",
+      "type": "ID!"
+    },
+    {
+      "name": "leadId",
+      "type": "ID!"
+    }
+  ]
+}

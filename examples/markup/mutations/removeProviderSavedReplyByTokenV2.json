@@ -1,0 +1,13 @@
+{
+  "name": "removeProviderSavedReplyByTokenV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterRemoveOneProviderSavedReplyInput"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

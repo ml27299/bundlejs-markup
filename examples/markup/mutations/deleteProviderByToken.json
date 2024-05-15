@@ -1,0 +1,9 @@
+{
+  "name": "deleteProviderByToken",
+  "args": [
+    {
+      "name": "actionNames",
+      "type": "[String]"
+    }
+  ]
+}

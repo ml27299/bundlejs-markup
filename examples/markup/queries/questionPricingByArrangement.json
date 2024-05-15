@@ -1,0 +1,13 @@
+{
+  "name": "questionPricingByArrangement",
+  "args": [
+    {
+      "name": "service",
+      "type": "ID!"
+    },
+    {
+      "name": "questions",
+      "type": "[QuestionPricingQuestionInput]"
+    }
+  ]
+}

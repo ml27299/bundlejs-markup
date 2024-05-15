@@ -1,0 +1,17 @@
+{
+  "name": "providerV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindOneProviderInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}

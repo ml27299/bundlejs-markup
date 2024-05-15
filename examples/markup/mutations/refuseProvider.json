@@ -1,0 +1,13 @@
+{
+  "name": "refuseProvider",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "reason",
+      "type": "String"
+    }
+  ]
+}

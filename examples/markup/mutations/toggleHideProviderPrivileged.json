@@ -1,0 +1,13 @@
+{
+  "name": "toggleHideProviderPrivileged",
+  "args": [
+    {
+      "name": "providerId",
+      "type": "ID!"
+    },
+    {
+      "name": "date",
+      "type": "Date"
+    }
+  ]
+}

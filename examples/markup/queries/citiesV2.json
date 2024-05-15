@@ -1,0 +1,21 @@
+{
+  "name": "citiesV2",
+  "args": [
+    {
+      "name": "filter",
+      "type": "FilterFindManyCityInput"
+    },
+    {
+      "name": "skip",
+      "type": "Int"
+    },
+    {
+      "name": "limit",
+      "type": "Int"
+    },
+    {
+      "name": "sort",
+      "type": "JSON"
+    }
+  ]
+}
