@@ -100,6 +100,7 @@ class Markup {
 			if (argsDirectiveIndex > -1) {
 				const argsDirective =
 					fragment.definitions[0].directives[argsDirectiveIndex];
+
 				json.args = json.args.concat(
 					argsDirective.arguments.map((arg) => ({
 						name: arg.name.value,
@@ -107,10 +108,11 @@ class Markup {
 						skipInline: true,
 					}))
 				);
-				fragment.definitions[0].directives =
-					fragment.definitions[0].directives.filter(
-						(_, i) => i !== argsDirectiveIndex
-					);
+				//Do NOT remove the directive, it is needed for the fragment to be valid on multiple queries on the same page, code below is commented out for reference
+				// fragment.definitions[0].directives =
+				// 	fragment.definitions[0].directives.filter(
+				// 		(_, i) => i !== argsDirectiveIndex
+				// 	);
 				fragment.loc.source.body = fragment.loc.source.body.replace(
 					new RegExp(
 						`@${fragmentArgumentDirectiveName}\(\[\^\\)\]\+\)\\)`,
@@ -129,6 +131,7 @@ class Markup {
 
 	__generateOperationMarkupString(type, json, fragment) {
 		let { name, args } = json;
+
 		const skipInlineFilter = (arg) => !arg.skipInline;
 		if (fragment) {
 			const fragmentName = fragment.definitions[0].name.value;
