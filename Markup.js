@@ -87,9 +87,11 @@ class Markup {
 			} catch (err) {
 				throw err;
 			}
+
+			const json = Object.assign({}, markupJson);
 			if (isBool(fragment))
 				return gql`
-					${this.__generateOperationMarkupString(type, markupJson)}
+					${this.__generateOperationMarkupString(type, json)}
 				`;
 
 			const argsDirectiveIndex = fragment.definitions[0].directives.findIndex(
@@ -98,7 +100,7 @@ class Markup {
 			if (argsDirectiveIndex > -1) {
 				const argsDirective =
 					fragment.definitions[0].directives[argsDirectiveIndex];
-				markupJson.args = markupJson.args.concat(
+				json.args = json.args.concat(
 					argsDirective.arguments.map((arg) => ({
 						name: arg.name.value,
 						type: arg.value.value,
@@ -120,7 +122,7 @@ class Markup {
 
 			return gql`
 				${fragment}
-				${this.__generateOperationMarkupString(type, markupJson, fragment)}
+				${this.__generateOperationMarkupString(type, json, fragment)}
 			`;
 		};
 	}
