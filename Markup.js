@@ -183,6 +183,7 @@ class Markup {
 			onLoading = () => {},
 			batch = false,
 			context,
+			validationContext,
 			fragment,
 			keepTypeName,
 			client: customClient,
@@ -214,7 +215,7 @@ class Markup {
 			if (returnQuery) return { query, validation };
 			if (validation)
 				try {
-					this.validate(query, variables, validation);
+					this.validate(query, variables, validation, validationContext);
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -268,6 +269,7 @@ class Markup {
 			validations,
 			batch = false,
 			context,
+			validationContext,
 			fragment,
 			keepTypeName,
 			client: customClient,
@@ -299,7 +301,7 @@ class Markup {
 			if (returnMutation) return { mutation, validation };
 			if (validation)
 				try {
-					this.validate(mutation, variables, validation);
+					this.validate(mutation, variables, validation, validationContext);
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -341,7 +343,12 @@ class Markup {
 		}
 	}
 
-	validate(gql = required`gql`, input, schema = required`schema`) {
+	validate(
+		gql = required`gql`,
+		input,
+		schema = required`schema`,
+		validationContext = {}
+	) {
 		const { definitions } = gql;
 		if (definitions.length === 0)
 			throw new Error("No definitions in gql object");
@@ -388,7 +395,8 @@ class Markup {
 						Object.keys(args[key]).reduce((result, name) => {
 							result[name] = input[args[key][name]];
 							return result;
-						}, {})
+						}, {}),
+						{ context: validationContext }
 					)
 				);
 			} catch (err) {
