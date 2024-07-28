@@ -187,6 +187,7 @@ class Markup {
 			fragment,
 			keepTypeName,
 			client: customClient,
+			cleanVariables = false,
 		} = {},
 		name = required`name`
 	) {
@@ -215,7 +216,13 @@ class Markup {
 			if (returnQuery) return { query, validation };
 			if (validation)
 				try {
-					this.validate(query, variables, validation, validationContext);
+					const cleanedVariables = this.validate(
+						query,
+						variables,
+						validation,
+						validationContext
+					);
+					if (cleanVariables) variables = cleanedVariables;
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -273,6 +280,7 @@ class Markup {
 			fragment,
 			keepTypeName,
 			client: customClient,
+			cleanVariables = false,
 		},
 		name = required`name`
 	) {
@@ -301,7 +309,13 @@ class Markup {
 			if (returnMutation) return { mutation, validation };
 			if (validation)
 				try {
-					this.validate(mutation, variables, validation, validationContext);
+					const cleanedVariables = this.validate(
+						mutation,
+						variables,
+						validation,
+						validationContext
+					);
+					if (cleanVariables) variables = cleanedVariables;
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -404,7 +418,7 @@ class Markup {
 			}
 		}
 
-		return true;
+		return input || {};
 	}
 }
 
