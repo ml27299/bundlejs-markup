@@ -187,7 +187,7 @@ class Markup {
 			fragment,
 			keepTypeName,
 			client: customClient,
-			cleanVariables = false,
+			stripUnknown = false,
 		} = {},
 		name = required`name`
 	) {
@@ -220,9 +220,10 @@ class Markup {
 						query,
 						variables,
 						validation,
-						validationContext
+						validationContext,
+						stripUnknown
 					);
-					if (cleanVariables) variables = cleanedVariables;
+					if (stripUnknown) variables = cleanedVariables;
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -280,7 +281,7 @@ class Markup {
 			fragment,
 			keepTypeName,
 			client: customClient,
-			cleanVariables = false,
+			stripUnknown = false,
 		},
 		name = required`name`
 	) {
@@ -313,9 +314,10 @@ class Markup {
 						mutation,
 						variables,
 						validation,
-						validationContext
+						validationContext,
+						stripUnknown
 					);
-					if (cleanVariables) variables = cleanedVariables;
+					if (stripUnknown) variables = cleanedVariables;
 				} catch (err) {
 					console.error(err);
 					throw err;
@@ -361,7 +363,8 @@ class Markup {
 		gql = required`gql`,
 		input,
 		schema = required`schema`,
-		validationContext = {}
+		validationContext = {},
+		stripUnknown = false
 	) {
 		const { definitions } = gql;
 		if (definitions.length === 0)
@@ -409,7 +412,7 @@ class Markup {
 						result[name] = input[args[key][name]];
 						return result;
 					}, {}),
-					{ context: validationContext }
+					{ stripUnknown, context: validationContext }
 				);
 				Object.assign(input, response);
 				Object.assign(cleaned, response);
