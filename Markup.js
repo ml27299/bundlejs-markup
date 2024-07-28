@@ -400,25 +400,25 @@ class Markup {
 			}, {});
 		}, {});
 
+		let cleaned = {};
 		for (const key in args) {
 			if (args.hasOwnProperty(key) === false) continue;
 			try {
-				Object.assign(
-					input,
-					schema.validateSync(
-						Object.keys(args[key]).reduce((result, name) => {
-							result[name] = input[args[key][name]];
-							return result;
-						}, {}),
-						{ context: validationContext }
-					)
+				const response = schema.validateSync(
+					Object.keys(args[key]).reduce((result, name) => {
+						result[name] = input[args[key][name]];
+						return result;
+					}, {}),
+					{ context: validationContext }
 				);
+				Object.assign(input, response);
+				Object.assign(cleaned, response);
 			} catch (err) {
 				throw err;
 			}
 		}
 
-		return input || {};
+		return cleaned;
 	}
 }
 
