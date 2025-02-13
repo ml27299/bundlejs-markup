@@ -28,7 +28,8 @@
 	},
 	"dependencies": {
 		"graphql-tag": "^2.12.5",
-		"omit-deep": "^0.3.0"
+		"omit-deep": "^0.3.0",
+		"source-map-support": "^0.5.21"
 	},
 	"devDependencies": {
 		"@babel/core": "7.2.2",
