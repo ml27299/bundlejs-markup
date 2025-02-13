@@ -9,7 +9,7 @@ module.exports = ({} = {}) => {
 		entry: {
 			index: path.resolve(__dirname, "index.js"),
 		},
-		devtool: "source-map",
+		devtool: false,
 		externals: [nodeExternals()],
 		optimization: {
 			minimize: true,
