@@ -1,6 +1,6 @@
 {
 	"name": "@bundlejs/markup",
-	"version": "1.4.1",
+	"version": "1.4.2",
 	"repository": "git@github.com:ml27299/bundlejs-markup.git",
 	"engines": {
 		"node": ">=10.15.0",
@@ -28,7 +28,8 @@
 	},
 	"dependencies": {
 		"graphql-tag": "^2.12.5",
-		"omit-deep": "^0.3.0"
+		"omit-deep": "^0.3.0",
+		"source-map-support": "^0.5.21"
 	},
 	"devDependencies": {
 		"@babel/core": "7.2.2",
