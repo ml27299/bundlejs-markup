@@ -104,10 +104,14 @@ class Markup {
 				json.args = json.args.concat(
 					argsDirective.arguments.map((arg) => ({
 						name: arg.name.value,
-						type: arg.value.value,
+						type:
+							arg.value.kind === "ListValue"
+								? `[${arg.value.values[0].value}]`
+								: arg.value.value,
 						skipInline: true,
 					}))
 				);
+
 				//Do NOT remove the directive, it is needed for the fragment to be valid on multiple queries on the same page, code below is commented out for reference
 				// fragment.definitions[0].directives =
 				// 	fragment.definitions[0].directives.filter(
