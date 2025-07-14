@@ -1,12 +1,8 @@
 import gql from "graphql-tag";
 
 export const categoriesV2Fragment = gql`
-	fragment categoriesV2Fragment on Category {
+	fragment categoriesFragment on Category @args(blah: [String]) {
 		_id
 		name
-		# services(filter: $servicesFilter) {
-		# 	_id
-		# 	name
-		# }
 	}
 `;
