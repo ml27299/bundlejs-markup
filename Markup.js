@@ -250,7 +250,7 @@ class Markup {
 			);
 
 			if (errors && errors.length > 0) {
-				throw new Error(errors[0]);
+				throw errors;
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
@@ -342,7 +342,7 @@ class Markup {
 			);
 
 			if (errors && errors.length > 0) {
-				throw new Error(errors[0]);
+				throw errors;
 			}
 
 			if (!keepTypeName) omitDeep(data, "__typename");
